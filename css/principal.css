@@ -1,0 +1,287 @@
+/*==================================================
+PRINCIPAL PROFILE
+==================================================*/
+
+.principal-profile{
+
+    background:#ffffff;
+
+}
+
+.principal-grid{
+
+    display:grid;
+
+    grid-template-columns:38% 62%;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.principal-image{
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.principal-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.4s ease;
+
+}
+
+.principal-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.principal-content h2{
+
+    margin-bottom:12px;
+
+}
+
+.principal-content h4{
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+}
+
+.principal-content p{
+
+    margin-bottom:20px;
+
+}
+
+/*==================================================
+PROFESSIONAL EXPERIENCE
+==================================================*/
+
+.professional-experience{
+
+    background:#f8f8f8;
+
+}
+
+.experience-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+/*==================================================
+AREAS OF EXPERTISE
+==================================================*/
+
+.expertise{
+
+    background:#ffffff;
+
+}
+
+.expertise-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.expertise-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s ease;
+
+}
+
+.expertise-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.expertise-card i{
+
+    width:75px;
+
+    height:75px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(140,107,45,.10);
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+}
+
+.expertise-card h3{
+
+    margin-bottom:0;
+
+}
+
+/*==================================================
+PROFESSIONAL PHILOSOPHY
+==================================================*/
+
+.philosophy{
+
+    background:#f8f8f8;
+
+}
+
+.philosophy-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.philosophy blockquote{
+
+    margin:35px 0;
+
+    padding:35px;
+
+    border-left:5px solid var(--primary);
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow);
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2rem;
+
+    font-style:italic;
+
+    color:var(--heading);
+
+    line-height:1.5;
+
+}
+
+/*==================================================
+PRINCIPAL CTA
+==================================================*/
+
+.principal-cta{
+
+    background:#ffffff;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media (max-width:992px){
+
+.principal-grid{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+}
+
+.principal-content{
+
+    text-align:center;
+
+}
+
+.expertise-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.expertise-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.philosophy blockquote{
+
+    font-size:1.6rem;
+
+    padding:25px;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.principal-content h2{
+
+    font-size:2.2rem;
+
+}
+
+.principal-content h4{
+
+    font-size:1.05rem;
+
+}
+
+.philosophy blockquote{
+
+    font-size:1.35rem;
+
+}
+
+}
